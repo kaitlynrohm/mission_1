@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!--Type of characters used in document. UTF-8 is standard-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Helps make website more mobile friendly -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <title>Weird and Wonderful HTML and CSS</title>
+</head>
+
+<body>
+    <header>
+        
+        <div class="container">
+            <div class="navbar">
+                <i class="fa-solid fa-bars" id="menu-icon" style="color: #ffffff;" onclick="togglemenu()"></i>
+              <nav>
+                <ul id="menuList">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#text">Text</a></li>
+                  <li><a href="#lists">Lists</a></li>
+                  <li><a href="#borders">Borders</a></li>
+                  <li><a href="#flexboxes">Flexboxes</a></li>
+                  <li><a href="#animations">Animations</a></li>
+                  <li><a href="#forms">Forms</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <section id="title">
+          <!-- This is where the title is. -->
+            <div id="title-bg">
+                <h1>Weird and Wonderful HTML and CSS</h1>
+                <div class="buttons">
+                  <!-- These will move the user down the page to the different sectors -->
+                  <a href="#text" class="btn">Text</a>
+                  <a href="#lists" class="btn">Lists</a>
+                  <a href="#borders" class="btn">Borders</a>
+                  <a href="#flexboxes" class="btn">Flexboxes</a>
+                  <a href="#animations" class="btn">Animations</a>
+                  <a href="#forms" class="btn">Forms</a>
+                </div>
+            </div>
+            <!-- Have background change from html code to css code -->
+        </section>
+        
+        <section id="text">
+          <!-- Different cool things you can do with text in css and html 
+          Might include some animations/transitions-->
+          <div class="left">
+            <!-- On the left side of the page. -->
+
+          </div>
+          <div class="right">
+            <!-- On the right side of the page -->
+
+          </div>
+        </section>
+
+        <section id="lists">
+          <!-- Different ways that lists can be changed -->
+          <div class="left">
+            <!-- On the left side of the page. -->
+
+          </div>
+          <div class="right">
+            <!-- On the right side of the page -->
+
+          </div>
+        </section>
+
+        <section id="borders">
+          <!-- How borders can look -->
+          <div class="left">
+            <!-- On the left side of the page. -->
+
+          </div>
+          <div class="right">
+            <!-- On the right side of the page -->
+
+          </div>
+        </section>
+
+        <section id="flexboxes">
+          <!-- Cool things with flexboxes -->
+          
+        </section>
+
+        <section id="animations">
+          <!-- Different ways that lists can be changed -->
+          <div class="left">
+            <!-- On the left side of the page. -->
+
+          </div>
+          <div class="right">
+            <!-- On the right side of the page -->
+
+          </div>
+        </section>
+
+        <section id="forms">
+          <!-- Different ways that lists can be changed -->
+          
+        </section>
+    </main>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+    
+        menuList.style.maxHeight = "0px";
+    
+        function togglemenu() {
+          if(menuList.style.maxHeight === "0px") 
+          {
+            menuList.style.maxHeight = "300px";
+          }
+          else 
+          {
+            menuList.style.maxHeight = "0px";
+          }
+        }
+    </script>
+</body>
+</html>
