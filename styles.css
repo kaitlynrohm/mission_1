@@ -146,6 +146,28 @@ ul{
     list-style-type: square;
 }
 
+/* Ordered lists */
+ol{
+    list-style-position: inside;
+    
+}
+
+#roman-geogorian{
+    list-style-type: lower-roman;
+}
+
+#roman-geogorian:hover{
+    list-style-type: georgian;
+}
+
+#alphabet-decimal{
+    list-style-type: lower-alpha;
+}
+
+#alphabet-decimal:hover{
+    list-style-type: decimal;
+}
+
 /* RWD Styling */
 @media only screen and (max-width: 728px){
     /* Font size adjustment */
