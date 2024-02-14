@@ -87,7 +87,7 @@ nav ul li a:hover{
     height: 8vw;
     display: flex;
     flex-wrap: wrap;
-    padding: 10vw 3vw 19vw;
+    padding: 10vw 2vw 15vw;
 }
 
 .btn{
@@ -105,22 +105,30 @@ nav ul li a:hover{
     background-color: #1195c9;
 }
 
-/* Text section */
-#text{
-    background-color: #a5a3ff;
+/* Common styling */
+.flex{
     display: flex;
 }
 
 .left{
-    background-color: aqua;
+    background-color: rgb(187, 241, 255);
     width: 35%;
+    padding-top: 5px;
     padding-left: 10px;
+    margin-top: 10px;
 }
 
 .right{
-    background-color: chartreuse;
+    background-color: rgb(252, 164, 255);
     width: 65%;
+    padding-top: 5px;
     padding-left: 10px;
+    margin-top: 10px;
+}
+
+/* Text section */
+#text{
+    background-color: #bd83ff;
 }
 
 /* RWD Styling */
