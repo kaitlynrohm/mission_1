@@ -10,7 +10,13 @@ body{
 }
 
 header{
-    background: linear-gradient(#1195c9, #ff79e2);
+    background: linear-gradient(#1195c9, #1195c9, #ff79e2);
+}
+
+/* General element styles */
+h1{
+    color: white;
+    font-size: 2.8vw;
 }
 
 /* Class styles for whole page */
@@ -68,20 +74,22 @@ nav ul li a:hover{
 }
 
 /* Title section styling */
+
+/* Gives heading a background colour. */
 #title{
-    background-color: #ff79e2;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0;
     /* Have background scroll through css? -- Text background colour */
 }
 
-/* Title text styling */
-h1{
-    color: white;
-}
-
-/* Gives heading a background colour. */
-#title-background{
-    background-color: black;
+#title-bg{
+    background-color: #ff79e2;
+    width: 50%;
+    justify-content: center;
+    height: 8vw;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
