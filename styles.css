@@ -19,16 +19,6 @@ h1{
     font-size: 2.8vw;
 }
 
-/* Class styles for whole page */
-/* .btn{
-
-    
-} */
-
-/* .btn:hover{
-    
-} */
-
 /* Nav bar style */
 
 .container{
@@ -79,20 +69,33 @@ nav ul li a:hover{
 #title{
     display: flex;
     justify-content: center;
-    padding: 10vh 0;
     /* Have background scroll through css? -- Text background colour */
 }
 
 #title-bg{
     background-color: #ff79e2;
-    width: 50%;
+    width: 56%;
     justify-content: center;
     height: 8vw;
     display: flex;
     flex-wrap: wrap;
+    padding: 10vw 3vw 15vw;
 }
 
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #1195c9;
+    color: white;
+    min-width: 7vw;
+    margin: 2vw 0.3vw;
+    font-size: 1.3vw;
+    text-align: center;
+}
 
+.btn:hover{
+    background-color: #1195c9;
+}
 
 /* RWD Styling */
 @media only screen and (max-width: 700px){
