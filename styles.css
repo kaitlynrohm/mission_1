@@ -111,7 +111,7 @@ nav ul li a:hover{
 }
 
 .left{
-    background-color: rgb(187, 241, 255);
+    background-color: #bbf1ff;
     width: 35%;
     padding-top: 5px;
     padding-left: 10px;
@@ -119,16 +119,31 @@ nav ul li a:hover{
 }
 
 .right{
-    background-color: rgb(252, 164, 255);
+    background-color: #fca4ff;
     width: 65%;
     padding-top: 5px;
     padding-left: 10px;
     margin-top: 10px;
 }
 
-/* Text section */
-#text{
+/* Backgrounds for sections */
+#text, #lists, #borders, #animations, #forms{
     background-color: #bd83ff;
+}
+
+/* Style for lists section */
+/* Unordered lists */
+ul{
+    list-style-position: inside;
+}
+
+#circle-square{
+    list-style-type: circle;
+}
+
+#circle-square:hover{
+    /* Changes from circle to square */
+    list-style-type: square;
 }
 
 /* RWD Styling */
