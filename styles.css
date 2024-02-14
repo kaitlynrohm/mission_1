@@ -106,12 +106,19 @@ nav ul li a:hover{
 }
 
 /* Common styling */
+/* Backgrounds for sections */
+#text, #lists, #borders, #animations, #forms{
+    background-color: #bd83ff;
+    text-align: center;
+}
+
 .flex{
     display: flex;
 }
 
 .left{
     background-color: #bbf1ff;
+    text-align: left;
     width: 35%;
     padding-top: 5px;
     padding-left: 10px;
@@ -119,16 +126,12 @@ nav ul li a:hover{
 }
 
 .right{
+    text-align: left;
     background-color: #fca4ff;
     width: 65%;
     padding-top: 5px;
     padding-left: 10px;
     margin-top: 10px;
-}
-
-/* Backgrounds for sections */
-#text, #lists, #borders, #animations, #forms{
-    background-color: #bd83ff;
 }
 
 /* Style for lists section */
@@ -166,6 +169,61 @@ ol{
 
 #alphabet-decimal:hover{
     list-style-type: decimal;
+}
+
+/* Styling for the borders */
+/* Dotted and dashed styling */
+#dotted-dashed{
+    border: 2px dotted #fc2246;
+    height: 60px;
+    text-align: center;
+    transition: border 0.5s;
+}
+
+#dotted-dashed:hover{
+    border: 4px dashed #fc2246;
+}
+
+/* Solid and double styling */
+#solid-double{
+    border: 2px solid #fc2246;
+    height: 70px;
+    text-align: center;
+    transition: border 0.5s;
+}
+
+#solid-double:hover{
+    border: 4px double #fc2246;
+}
+
+/* Inset and outset styling */
+#inset-outset{
+    border: 2px inset #fc2246;
+    height: 60px;
+    text-align: center;
+    transition: border 0.5s;
+}
+
+#inset-outset:hover{
+    border: 4px outset #fc2246;
+}
+
+/* A little bit of fun */
+#fun{
+    border-top: 2px dotted #fc2246;
+    border-right: 3px dashed #a2002e;
+    border-bottom: 4px solid #44c6f9;
+    border-left: 5px double #5a5ae3;
+    height: 60px;
+    text-align: center;
+    transition: border 0.5s;
+}
+
+#fun:hover{
+    border-top: 5px solid #008b10;
+    border-right: 4px dotted #0034c1;
+    border-bottom: 3px double #9b6d00;
+    border-left: 2px dashed #c95b00;
 }
 
 /* RWD Styling */
