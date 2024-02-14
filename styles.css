@@ -56,7 +56,7 @@ nav ul li {
 nav>ul>li>a{
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 1.1vw;
 }
 
 nav ul li a:hover{
@@ -79,7 +79,7 @@ nav ul li a:hover{
     height: 8vw;
     display: flex;
     flex-wrap: wrap;
-    padding: 10vw 3vw 15vw;
+    padding: 10vw 3vw 19vw;
 }
 
 .btn{
@@ -98,7 +98,8 @@ nav ul li a:hover{
 }
 
 /* RWD Styling */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 728px){
+    /* Nav menu adjusted for screen size */
     #menu-icon{
         display: block;
         position: fixed;
@@ -131,5 +132,17 @@ nav ul li a:hover{
     nav ul li a:hover{
         color: #fff;
         font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 878px) {
+    /* nav style */
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    /* button adjustments for screens */
+    .btn{
+        font-size: 11px;
     }
 }
