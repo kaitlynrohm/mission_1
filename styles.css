@@ -90,16 +90,17 @@ nav ul li a:hover{
 #title{
     display: flex;
     justify-content: center;
-    background: url(html_background.png) lightblue top left;
+    background: url(html_background_2.png) lightblue top left;
     /* animation to scroll and change background to css code */
-    animation: title-background 9s infinite;
+    animation: title-background 4s 6;
+    /* Add number of repeats and use a longer image */
 }
 
 @keyframes title-background{
-    25%{background: url(html_background.png) lightcoral bottom left;}
-    50%{background: url(css_background.png) lightblue bottom left;}
-    75%{background: url(css_background.png) lightcoral top left;}
-    100%{background: url(html_background.png) lightblue top left;}
+    25%{background: url(html_background_2.png) lightcoral bottom left;}
+    50%{background: url(css_background_2.png) lightblue bottom left;}
+    75%{background: url(css_background_2.png) lightcoral top left;}
+    100%{background: url(html_background_2.png) lightblue top left;}
 }
 
 #title-bg{
