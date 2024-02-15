@@ -86,12 +86,10 @@ nav ul li a:hover{
 }
 
 /* Title section styling */
-
 /* Gives heading a background colour. */
 #title{
     display: flex;
     justify-content: center;
-    /* Have background scroll through css? -- Text background colour */
 }
 
 #title-bg{
@@ -329,6 +327,13 @@ input[type=email]{
 
 input[type=submit]{
     padding: 2px;
+}
+
+/* Footer style */
+footer{
+    background-color: #7cff7c;
+    text-align: center;
+    height: 50px;
 }
 
 /* RWD Styling */
