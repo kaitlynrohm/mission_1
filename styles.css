@@ -226,6 +226,61 @@ ol{
     border-left: 2px dashed #c95b00;
 }
 
+/* Animation section */
+#animations .right{
+    display: flex;
+    justify-content: space-around;
+}
+
+#blue{
+    height: 200px;
+    width: 30%;
+    background-color: blue;
+    animation-name: one;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#green{
+    height: 200px;
+    width: 30%;
+    background-color: #008000;
+    animation-name: two;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#pink{
+    height: 200px;
+    width: 30%;
+    background-color: #d30023;
+    animation-name: three;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Animations for animations section */
+@keyframes one{
+    10%{background-color: #ff0000;}
+    30%{background-color: #00ff1a;}
+    80%{background-color: #ff00c8;}
+    100%{background-color: #0000ff;}
+}
+
+@keyframes two{
+    15%{background-color: #f6ff00;}
+    45%{background-color: #00ffee;}
+    85%{background-color: #ff5900;}
+    100%{background-color: #008000;}
+}
+
+@keyframes three{
+    25%{background-color: #0004ff;}
+    50%{background-color: #ff00b7;}
+    75%{background-color: #00ff00;}
+    100%{background-color: #d30023;}
+}
+
 /* RWD Styling */
 @media only screen and (max-width: 728px){
     /* Font size adjustment */
