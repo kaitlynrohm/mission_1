@@ -157,6 +157,25 @@ nav ul li a:hover{
     margin-top: 10px;
 }
 
+/* Backgrounds for description sections */
+.code-desc .left{
+    background-color: #fed4ff;
+    text-align: left;
+    width: 50%;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.code-desc .right{
+    text-align: left;
+    background-color: #e4faff;
+    width: 50%;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
 /* Style for lists section */
 /* Unordered lists */
 ul{
