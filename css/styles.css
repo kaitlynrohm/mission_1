@@ -98,16 +98,16 @@ nav ul li a:hover {
 
 @keyframes title-background {
   25% {
-    background: url(img/html_background_2.png) lightcoral bottom left;
+    background: url(../img/html_background_2.png) lightcoral bottom left;
   }
   50% {
-    background: url(img/css_background_2.png) lightblue bottom left;
+    background: url(../img/css_background_2.png) lightblue bottom left;
   }
   75% {
-    background: url(img/css_background_2.png) lightcoral top left;
+    background: url(../img/css_background_2.png) lightcoral top left;
   }
   100% {
-    background: url(img/html_background_2.png) lightblue top left;
+    background: url(../img/html_background_2.png) lightblue top left;
   }
 }
 
