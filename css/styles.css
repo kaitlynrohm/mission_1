@@ -192,6 +192,7 @@ nav ul li a:hover {
 /* Unordered lists */
 ul {
   list-style-position: inside;
+  font-size: 1.3vw;
 }
 
 #circle-square {
