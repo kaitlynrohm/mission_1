@@ -6,7 +6,6 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ecf8fc;
 }
 
 header {
@@ -21,6 +20,18 @@ section {
 h1 {
   color: white;
   font-size: 2.8vw;
+}
+
+h2 {
+  font-size: 2.5vw;
+}
+
+h3 {
+  font-size: 2vw;
+}
+
+h4 {
+  font-size: 1.5vw;
 }
 
 p {
@@ -90,6 +101,7 @@ nav ul li a:hover {
 #title {
   display: flex;
   justify-content: center;
+  text-align: center;
   background: url(../img/html_background_2.png) lightblue top left;
   /* animation to scroll and change background to css code */
   animation: title-background 4s 3;
@@ -151,50 +163,55 @@ nav ul li a:hover {
   display: flex;
 }
 
-.left {
-  background-color: #bbf1ff;
+/* common styles left and right size */
+.left,
+.right {
   text-align: left;
-  width: 35%;
   padding-top: 5px;
   padding-left: 10px;
   margin-top: 10px;
+}
+
+.left {
+  background-color: #bbf1ff;
+  width: 35%;
 }
 
 .right {
-  text-align: left;
   background-color: #fca4ff;
   width: 65%;
-  padding-top: 5px;
-  padding-left: 10px;
-  margin-top: 10px;
 }
 
 /* Backgrounds for description sections */
-.code-desc .left {
-  background-color: #fed4ff;
+
+/* Code description left and right common styling */
+.code-desc .left,
+.code-desc .right {
   text-align: left;
   width: 50%;
   padding-top: 5px;
   padding-left: 10px;
   margin-top: 10px;
+}
+
+.code-desc .left {
+  background-color: #fed4ff;
 }
 
 .code-desc .right {
-  text-align: left;
   background-color: #e4faff;
-  width: 50%;
-  padding-top: 5px;
-  padding-left: 10px;
-  margin-top: 10px;
 }
 
 /* Style for lists section */
-/* Unordered lists */
-ul {
+
+/* Common styling */
+.left ul,
+.right ol {
   list-style-position: inside;
   font-size: 1.3vw;
 }
 
+/* Unordered lists */
 #circle-square {
   list-style-type: circle;
 }
@@ -205,10 +222,6 @@ ul {
 }
 
 /* Ordered lists */
-ol {
-  list-style-position: inside;
-}
-
 #roman-geogorian {
   list-style-type: lower-roman;
 }
@@ -227,11 +240,18 @@ ol {
 
 /* Styling for the borders */
 /* Dotted and dashed styling */
-#dotted-dashed {
-  border: 2px dotted #fc2246;
-  height: 60px;
+#dotted-dashed,
+#solid-double,
+#inset-outset,
+#fun {
+  height: 6vw;
   text-align: center;
   transition: border 0.5s;
+  font-size: 1.3vw;
+}
+
+#dotted-dashed {
+  border: 2px dotted #fc2246;
 }
 
 #dotted-dashed:hover {
@@ -241,9 +261,6 @@ ol {
 /* Solid and double styling */
 #solid-double {
   border: 2px solid #fc2246;
-  height: 70px;
-  text-align: center;
-  transition: border 0.5s;
 }
 
 #solid-double:hover {
@@ -253,9 +270,6 @@ ol {
 /* Inset and outset styling */
 #inset-outset {
   border: 2px inset #fc2246;
-  height: 60px;
-  text-align: center;
-  transition: border 0.5s;
 }
 
 #inset-outset:hover {
@@ -268,9 +282,6 @@ ol {
   border-right: 3px dashed #a2002e;
   border-bottom: 4px solid #44c6f9;
   border-left: 5px double #5a5ae3;
-  height: 60px;
-  text-align: center;
-  transition: border 0.5s;
 }
 
 #fun:hover {
@@ -286,31 +297,28 @@ ol {
   justify-content: space-around;
 }
 
-#blue {
-  height: 200px;
+/* common styling for animations */
+#blue,
+#green,
+#pink {
+  height: 15vw;
   width: 30%;
-  background-color: blue;
-  animation-name: one;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+}
+
+#blue {
+  background-color: blue;
+  animation-name: one;
 }
 
 #green {
-  height: 200px;
-  width: 30%;
   background-color: #008000;
-  animation-name: two;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 
 #pink {
-  height: 200px;
-  width: 30%;
   background-color: #d30023;
   animation-name: three;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 
 /* Animations for animations section */
@@ -378,21 +386,21 @@ label {
   padding: 5px;
 }
 
-input[type="text"] {
+/* Common styling for inputs */
+input[type="text"],
+input[type="email"] {
   padding: 5px 2px;
   margin: 8px 0;
   border: none;
 }
 
 input[type="email"] {
-  padding: 5px 2px;
-  margin: 8px 0;
-  border: none;
   width: 300px;
 }
 
 input[type="submit"] {
   padding: 2px;
+  margin-bottom: 10px;
 }
 
 /* Footer style */
@@ -404,15 +412,10 @@ footer {
 
 /* RWD Styling */
 @media only screen and (max-width: 728px) {
-  /* Font size adjustment */
-  h1 {
-    font-size: 16px;
-  }
-
   /* Nav menu adjusted for screen size */
   #menu-icon {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 10px;
   }
 
@@ -447,6 +450,23 @@ footer {
 
 @media screen and (max-width: 878px) {
   /* text size adjustments for screens */
+  h1 {
+    color: white;
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
   p {
     font-size: 11px;
   }
@@ -454,6 +474,7 @@ footer {
   nav ul li a {
     font-size: 10px;
   }
+
   .btn {
     font-size: 11px;
     margin: 2vw 0vw;
@@ -463,5 +484,31 @@ footer {
   #title-bg {
     padding-bottom: 80px;
     width: 65%;
+  }
+
+  /* section specific adjustments */
+
+  /* Changing proportion of left and right */
+  .left {
+    width: 40%;
+  }
+
+  .right {
+    width: 60%;
+  }
+
+  /* List size adjustment */
+  .left ul,
+  .right ol {
+    font-size: 11px;
+  }
+
+  /* Border resizing */
+  #dotted-dashed,
+  #solid-double,
+  #inset-outset,
+  #fun {
+    height: 50px;
+    font-size: 11px;
   }
 }
