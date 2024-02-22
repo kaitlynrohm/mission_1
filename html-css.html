@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Groovy HTML and CSS</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <i
+            class="fa-solid fa-bars"
+            id="menu-icon"
+            style="color: #ffffff"
+            onclick="togglemenu()"
+          ></i>
+          <nav>
+            <ul id="menuList">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">HTML and CSS</a></li>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Back to top button -->
+      <button onclick="topFunction()" id="to-top" title="Go to top">Top</button>
+
+      <section id="title">
+        <!-- This is where the title is. -->
+        <div id="title-bg">
+          <h1>Groovy HTML and CSS</h1>
+          <div class="buttons">
+            <!-- These will move the user down the page to the different sectors -->
+            <a href="#text" class="btn">Text</a>
+            <a href="#lists" class="btn">Lists</a>
+            <a href="#borders" class="btn">Borders</a>
+            <a href="#animations" class="btn">Animations</a>
+            <a href="#forms" class="btn">Forms</a>
+          </div>
+        </div>
+        <!-- Have background change from html code to css code -->
+      </section>
+
+      <section id="text">
+        <!-- Different cool things you can do with text in css and html -->
+        <h2>Terrific text</h2>
+        <div class="flex">
+          <div class="left">
+            <!-- On the left side of the page. -->
+            <h3>What you see!</h3>
+            <br />
+            <!-- Bold example -->
+            <p><b>YOU</b> can do many things to the text.</p>
+            <br />
+            <!-- Mark example -->
+            <p>Some things are very <mark>important.</mark></p>
+            <br />
+            <!-- Italic example -->
+            <p>Some thing need to be <i>pushed</i> a little.</p>
+            <br />
+            <!-- Delete example -->
+            <p>Other times you need to <del>remove</del> delete things</p>
+            <br />
+            <!-- Inserted example -->
+            <p>I think this is misspelled: <ins>Needeed</ins></p>
+            <br />
+            <!-- Sub and superscript example -->
+            <p>
+              <sup>High</sup> normal <sub>low</sub> normal <sup>high!!!!</sup>
+            </p>
+            <br />
+          </div>
+
+          <div class="right">
+            <!-- On the right side of the page -->
+            <h3>What you write!</h3>
+            <br />
+            <!-- Bold description -->
+            <p>
+              For <b>BOLD</b> simply use: &lt;b&gt; <b>content</b> &lt;/b&gt;
+            </p>
+            <br />
+            <!-- Mark description -->
+            <p>
+              To <mark>mark</mark> something use: &lt;mark&gt;
+              <mark>Your important content</mark> &lt;/mark&gt;
+            </p>
+            <br />
+            <!-- Italic description -->
+            <p>
+              To <i>push</i> just add: &lt;i&gt;
+              <i>slanted content </i> &lt;/i&gt;
+            </p>
+            <br />
+            <!-- Delate description -->
+            <p>
+              <del>Delete</del> using: &lt;del&gt;
+              <del>deleted content</del>&lt;/del&gt;
+            </p>
+            <br />
+            <!-- Inserted description -->
+            <p>
+              An <ins>underlined</ins> word uses: &lt;ins&gt;<ins
+                >underlined content</ins
+              >&lt;/ins&gt;
+            </p>
+            <br />
+            <!-- sub and superscript description -->
+            <p>
+              <sup>Higher</sup> or <sub>lower</sub> with
+              &lt;sup&gt;<sup>super</sup>&lt;/sup&gt; or
+              &lt;sub&gt;<sub>sub</sub>&lt;/sub&gt;
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="lists">
+        <h2>Luxurious lists</h2>
+        <!-- Different ways that lists can be changed -->
+        <div class="flex">
+          <div class="left">
+            <!-- On the left side of the page. -->
+            <h3>Various un-ordered lists</h3>
+            <br />
+            <h4>Circle and square list style</h4>
+            <!-- Example list both circle and square -->
+            <ul id="circle-square">
+              <li>To swich me</li>
+              <li>Hover over me</li>
+              <li>How cool is that?!?</li>
+            </ul>
+            <br />
+            <h4>Disc list style</h4>
+            <ul id="disc">
+              <li>A typical unordered list</li>
+              <li>With lots of stuff</li>
+              <li>As much as you want.</li>
+              <li>You can also do <b>lots</b> of cool things</li>
+              <li>Like I showed you <i>before</i></li>
+            </ul>
+            <br />
+          </div>
+
+          <div class="right">
+            <!-- On the right side of the page -->
+            <h3>Some ordered lists</h3>
+            <br />
+            <h4>Roman and geogorian list style</h4>
+            <ol id="roman-geogorian">
+              <li>Hover for geogorian.</li>
+              <li>This list is ordered.</li>
+              <li>
+                You could make instructions or simply list the things you like
+                from most to least.
+              </li>
+            </ol>
+            <br />
+            <h4>Alphabet and decimal list style</h4>
+            <ol id="alphabet-decimal">
+              <li>Hover to change me to decimal!!</li>
+              <li>I don't actually have anything else to write</li>
+              <li>Anyways these are some of the list style types.</li>
+              <li>
+                This is done in CSS just put list-style-type: type(e.g. disc);
+              </li>
+              <li>Just make sure to use the right list for you!!</li>
+            </ol>
+            <br />
+          </div>
+        </div>
+        <div class="code-desc">
+          <!-- How to make a list -->
+          <br />
+          <h3>To make a list</h3>
+          <div class="flex">
+            <div class="left">
+              <h4>CSS code</h4>
+              <br />
+              <!-- CSS styles for lists -->
+              <p>There are various things that can be styled in a list!</p>
+              <br />
+              <p>For example</p>
+              <br />
+              <p>
+                list-style: disc inside; /*This is short hand for all below*/
+              </p>
+              <br />
+              <p>
+                list-style-type: disc; /*This changes the marker and is the same
+                for both ordered and unordered lists*/
+              </p>
+              <br />
+              <p>
+                list-style-image: url(image.png); /*This allows you to put an
+                image as the marker*/
+              </p>
+              <br />
+              <p>
+                List-style-position: inside; /*This dictates where the markers
+                are. Inside the item or outside the item.*/
+              </p>
+            </div>
+
+            <div class="right">
+              <h4>HTML code</h4>
+              <br />
+              <!-- HTML code for lists -->
+              <p>
+                A list is fairly simple to make. Just follow the structure below
+              </p>
+              <br />
+              <p>
+                &lt;ul&gt; &lt;!--(for unordered) or--&gt; &lt;ol&gt;
+                &lt;!--(for ordered)--&gt
+              </p>
+              <br />
+              <p>&nbsp; &nbsp; &lt;li&gt;Any list items&lt;/li&gt;</p>
+              <br />
+              <p>&nbsp; &nbsp; &lt;li&gt;More list items&lt;/li&gt;</p>
+              <br />
+              <p>
+                &nbsp; &nbsp; &lt;li&gt;As many list items as you
+                want!&lt;/li&gt;
+              </p>
+              <br />
+              <p>
+                &lt;ul&gt; &lt;!--(for unordered) or--&gt &lt;ol&gt; &lt;!--(for
+                ordered) - This should be the same as the top.--&gt
+              </p>
+              <br />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="borders">
+        <!-- How borders can look -->
+        <h2>Brillaint borders</h2>
+        <div class="flex">
+          <div class="left">
+            <!-- On the left side of the page. -->
+            <h3>Styled with css</h3>
+            <br />
+            <!-- Dotted and dashed description -->
+            <p>You can have many different types of borders.</p>
+            <p>The border can be dotted or dashed.</p>
+            <p>Just hover to see the difference between the two.</p>
+            <br />
+
+            <!-- Solid and double description -->
+            <p>If that doesn't suit your taste perhaps something more solid.</p>
+            <p>Just hover to double up.</p>
+            <p>So many brillaint borders.</p>
+            <br />
+            <!-- Inset and outset description -->
+            <p>An odd one is inset and outset.</p>
+            <p>A weird and wonderful border.</p>
+            <p>whether you use it or not, it's pretty cool.</p>
+            <br />
+            <!-- Just go crazy with it -->
+            <p>OR you could just go crazy</p>
+            <p>Do different border types for each side</p>
+            <p>Hover to see a change</p>
+          </div>
+
+          <div class="right">
+            <!-- On the right side of the page -->
+            <h3>Presented to your eyes</h3>
+            <br />
+            <!-- Dotted and dashed example -->
+            <div id="dotted-dashed" class="border">
+              I have a dotty outline and if you hover my border is dashing!
+            </div>
+            <br />
+            <!-- Solid and double example -->
+            <div id="solid-double">
+              A solid border is always cool. If you hover it'll be double cool.
+            </div>
+            <br />
+            <!-- Inset and outset example -->
+            <div id="inset-outset">
+              Inset or outset. To hover or not to hover. (Hovering gives
+              outset).
+            </div>
+            <br />
+            <!-- A bit of fun with borders -->
+            <div id="fun">Briliant borders are fun!!!</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="animations">
+        <!-- Three divs with images shuffle them with content hidden -->
+        <h2>Amazing animations</h2>
+        <div class="flex">
+          <div class="left">
+            <!-- On the left side of the page. -->
+            <h3>Watch and learn</h3>
+            <br />
+            <p>Colours shifting makes things pretty</p>
+            <p>Each has their own progression watch in awe</p>
+            <br />
+          </div>
+
+          <div class="right">
+            <!-- On the right side of the page -->
+            <div id="blue"></div>
+            <div id="green"></div>
+            <div id="pink"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="forms">
+        <!-- A form using various different things -->
+        <h2>Fabulous forms</h2>
+        <form action="mailto:kaitlynr@missionreadyhq.com" method="post">
+          <div>
+            <!-- Name -->
+            <label>Name: </label><input type="text" name="name" />
+            <br />
+
+            <!-- Email -->
+            <label>Email: </label><input type="email" name="email" /> <br />
+
+            <!-- Radio buttons -->
+            <label>Did you learn something?</label> <br />
+            <input type="radio" id="yes" name="learn" value="yes" />
+            <label for="yes">Yes</label><br />
+
+            <input type="radio" id="no" name="learn" value="no" />
+            <label for="no">No</label><br />
+
+            <input type="radio" id="maybe" name="learn" value="maybe" />
+            <label for="maybe">Maybe</label><br />
+
+            <br />
+            <!-- Checkbox -->
+            <label>Which do you have?</label> <br />
+            <input type="checkbox" id="phone" name="phone" value="Phone" />
+            <label for="phone">Phone</label><br />
+
+            <input
+              type="checkbox"
+              id="computer"
+              name="computer"
+              value="computer"
+            />
+            <label for="computer"> Computer</label><br />
+
+            <input type="checkbox" id="comb" name="comb" value="comb" />
+            <label for="comb">Comb</label><br />
+            <br />
+            <input type="submit" /> <br />
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        <br />
+        <p>@Copyright 2024 by Kaitlyn Rohm, all rights reserved</p>
+      </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
