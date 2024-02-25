@@ -14,6 +14,8 @@ header {
 
 section {
   padding: 1vw;
+  background-color: #bd83ff;
+  text-align: center;
 }
 
 /* General element styles */
@@ -96,9 +98,13 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
+/* Common styling for pages */
+/* When js has more code use in bg of index */
+
 /* Title section styling */
 /* Gives heading a background colour. */
-#title {
+#title,
+#title-html-css {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -154,15 +160,6 @@ nav ul li a:hover {
 
 /* Common styling */
 /* Backgrounds for sections */
-#text,
-#lists,
-#borders,
-#animations,
-#forms {
-  background-color: #bd83ff;
-  text-align: center;
-}
-
 .flex {
   display: flex;
 }
@@ -205,6 +202,74 @@ nav ul li a:hover {
 .code-desc .right {
   background-color: #e4faff;
 }
+
+/* Style for index webpage */
+
+/* Entire page styling */
+.section-content {
+  margin: 1vw;
+}
+
+/* html-css section styling */
+/* alternate pay styling */
+#alternate-pay {
+  background-color: white;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+}
+
+#alternate-pay-left {
+  width: 45%;
+  background-color: white;
+}
+
+#alternate-pay a {
+  text-decoration: none;
+  color: black;
+}
+
+#alternate-pay a:hover {
+  text-decoration: underline;
+}
+
+#alternate-pay p {
+  font-size: 1.3vw;
+  padding: 1vw 0;
+}
+
+span {
+  color: black;
+  font-weight: 400;
+  transition: color 2s, font-weight 0.5s;
+}
+
+span:hover {
+  color: blue;
+  font-weight: 700;
+}
+
+.alternate-pay-btn {
+  background-color: #97e5ff;
+  padding: 2px;
+}
+
+.alternate-pay-btn:hover {
+  background-color: #00bfff;
+}
+
+/* Right side styling */
+#alternate-pay-right {
+  background: url("https://flipweb.org/wp-content/uploads/2019/11/Facebook-Pay.png")
+    white;
+  width: 55%;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* Style for html-css webpage */
 
 /* Style for lists section */
 
