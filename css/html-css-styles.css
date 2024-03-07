@@ -25,3 +25,249 @@
     background: url(../img/html_background_2.png) lightblue top left;
   }
 }
+
+/* common styles left and right size */
+.left,
+.right {
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.left {
+  background-color: #bbf1ff;
+  width: 35%;
+}
+
+.right {
+  background-color: #fca4ff;
+  width: 65%;
+}
+
+/* Backgrounds for description sections */
+/* Code description left and right common styling */
+.code-desc .left,
+.code-desc .right {
+  text-align: left;
+  width: 50%;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.code-desc .left {
+  background-color: #fed4ff;
+}
+
+.code-desc .right {
+  background-color: #e4faff;
+}
+
+/* Style for lists section */
+
+/* Common styling */
+.left ul,
+.right ol {
+  list-style-position: inside;
+  font-size: 1.3vw;
+}
+
+/* Unordered lists */
+#circle-square {
+  list-style-type: circle;
+}
+
+#circle-square:hover {
+  /* Changes from circle to square */
+  list-style-type: square;
+}
+
+/* Ordered lists */
+#roman-geogorian {
+  list-style-type: lower-roman;
+}
+
+#roman-geogorian:hover {
+  list-style-type: georgian;
+}
+
+#alphabet-decimal {
+  list-style-type: lower-alpha;
+}
+
+#alphabet-decimal:hover {
+  list-style-type: decimal;
+}
+
+/* Styling for the borders */
+/* Dotted and dashed styling */
+#dotted-dashed,
+#solid-double,
+#inset-outset,
+#fun {
+  height: 6vw;
+  text-align: center;
+  transition: border 0.5s;
+  font-size: 1.3vw;
+}
+
+#dotted-dashed {
+  border: 2px dotted #fc2246;
+}
+
+#dotted-dashed:hover {
+  border: 4px dashed #fc2246;
+}
+
+/* Solid and double styling */
+#solid-double {
+  border: 2px solid #fc2246;
+}
+
+#solid-double:hover {
+  border: 4px double #fc2246;
+}
+
+/* Inset and outset styling */
+#inset-outset {
+  border: 2px inset #fc2246;
+}
+
+#inset-outset:hover {
+  border: 4px outset #fc2246;
+}
+
+/* A little bit of fun */
+#fun {
+  border-top: 2px dotted #fc2246;
+  border-right: 3px dashed #a2002e;
+  border-bottom: 4px solid #44c6f9;
+  border-left: 5px double #5a5ae3;
+}
+
+#fun:hover {
+  border-top: 5px solid #008b10;
+  border-right: 4px dotted #0034c1;
+  border-bottom: 3px double #9b6d00;
+  border-left: 2px dashed #c95b00;
+}
+
+/* Animation section */
+#animations .right {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* common styling for animations */
+#blue,
+#green,
+#pink {
+  height: 15vw;
+  width: 30%;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#blue {
+  background-color: blue;
+  animation-name: one;
+}
+
+#green {
+  background-color: #008000;
+}
+
+#pink {
+  background-color: #d30023;
+  animation-name: three;
+}
+
+/* Animations for animations section */
+@keyframes one {
+  10% {
+    background-color: #ff0000;
+  }
+  30% {
+    background-color: #00ff1a;
+  }
+  80% {
+    background-color: #ff00c8;
+  }
+  100% {
+    background-color: #0000ff;
+  }
+}
+
+@keyframes two {
+  15% {
+    background-color: #f6ff00;
+  }
+  45% {
+    background-color: #00ffee;
+  }
+  85% {
+    background-color: #ff5900;
+  }
+  100% {
+    background-color: #008000;
+  }
+}
+
+@keyframes three {
+  25% {
+    background-color: #0004ff;
+  }
+  50% {
+    background-color: #ff00b7;
+  }
+  75% {
+    background-color: #00ff00;
+  }
+  100% {
+    background-color: #d30023;
+  }
+}
+
+/* Form styling */
+form {
+  display: flex;
+  align-items: center;
+}
+
+#forms div {
+  background-color: #bbf1ff;
+  text-align: left;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+label {
+  padding: 5px;
+}
+
+/* Common styling for inputs */
+input[type="text"],
+input[type="email"] {
+  padding: 5px 2px;
+  margin: 8px 0;
+  border: none;
+}
+
+input[type="email"] {
+  width: 300px;
+}
+
+input[type="submit"] {
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+/* Footer style */
+footer {
+  background-color: #7cff7c;
+  text-align: center;
+  height: 50px;
+}

@@ -25,3 +25,62 @@
     background: url(../img/html_background_2.png) lightblue top left;
   }
 }
+
+/* html-css section styling */
+/* alternate pay styling */
+#alternate-pay {
+  background-color: white;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+}
+
+#alternate-pay-left {
+  width: 45%;
+  background-color: white;
+}
+
+#alternate-pay a {
+  text-decoration: none;
+  color: black;
+}
+
+#alternate-pay a:hover {
+  text-decoration: underline;
+}
+
+#alternate-pay p {
+  font-size: 1.3vw;
+  padding: 1vw 0;
+}
+
+span {
+  color: black;
+  font-weight: 400;
+  transition: color 2s, font-weight 0.5s;
+}
+
+span:hover {
+  color: blue;
+  font-weight: 700;
+}
+
+.alternate-pay-btn {
+  background-color: #97e5ff;
+  padding: 2px;
+}
+
+.alternate-pay-btn:hover {
+  background-color: #00bfff;
+}
+
+/* Right side styling */
+#alternate-pay-right {
+  background: url("https://flipweb.org/wp-content/uploads/2019/11/Facebook-Pay.png")
+    white;
+  width: 55%;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
