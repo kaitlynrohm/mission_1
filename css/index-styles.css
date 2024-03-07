@@ -1,0 +1,27 @@
+/* Styles for index */
+
+/* title styling */
+#title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: url(../img/html_background_2.png) lightblue top left;
+  /* animation to scroll and change background to css code */
+  animation: title-background 4s 3;
+  /* Add number of repeats and use a longer image */
+}
+
+@keyframes title-background {
+  25% {
+    background: url(../img/html_background_2.png) lightcoral bottom left;
+  }
+  50% {
+    background: url(../img/css_background_2.png) lightblue bottom left;
+  }
+  75% {
+    background: url(../img/css_background_2.png) lightcoral top left;
+  }
+  100% {
+    background: url(../img/html_background_2.png) lightblue top left;
+  }
+}
