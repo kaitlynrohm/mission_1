@@ -16,23 +16,49 @@
   </head>
   <body>
     <header>
-        <div class="container">
-          <div class="navbar">
-            <i
-              class="fa-solid fa-bars"
-              id="menu-icon"
-              style="color: #ffffff"
-              onclick="togglemenu()"
-            ></i>
-            <nav>
-              <ul id="menuList">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html-css.html">HTML and CSS</a></li>
-                <li><a href="flex-grid.html">Flex and Grid</a></li>
-                <li><a href="#">JS Calculator</a></li>
-            </nav>
+      <div class="container">
+        <div class="navbar">
+          <i
+            class="fa-solid fa-bars"
+            id="menu-icon"
+            style="color: #ffffff"
+            onclick="togglemenu()"
+          ></i>
+          <nav>
+            <ul id="menuList">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="html-css.html">HTML and CSS</a></li>
+              <li><a href="flex-grid.html">Flex and Grid</a></li>
+              <li><a href="#">JS Calculator</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="title">
+        <div id="title-bg"><h1>Calculator</h1></div>
+      </section>
+
+      <section id="calculator">
+        <h3 id="output">Where the answer will go</h3>
+        <div class="grid flex">
+          <div id="numbers">
+            <!-- Numbers -->
+            <button id="num1" class="number">1</button>
+            <button id="num2" class="number">2</button>
+            <button id="num3" class="number">3</button>
+            <button id="num4" class="number">4</button>
+            <button id="num5" class="number">5</button>
+            <button id="num6" class="number">6</button>
+            <button id="num7" class="number">7</button>
+            <button id="num8" class="number">8</button>
+            <button id="num9" class="number">9</button>
+            <button id="num0" class="number">0</button>
           </div>
         </div>
-      </header>
+      </section>
+    </main>
   </body>
 </html>
